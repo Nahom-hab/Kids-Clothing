@@ -25,7 +25,7 @@ const ProductSchema = mongoose.Schema({
     },
     clothType: {
         type: String,
-        enum: ["jens", "tshirt", "Sweaters", "Pants", "Shooes", "Pijamas", "socks"],
+        enum: ["jeans", "tshirt", "sweaters", "pants", "shoes", "pajamas", "socks"],
         required: true
     },
     type: {

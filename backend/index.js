@@ -1,5 +1,4 @@
 import express from 'express';
-import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import cookieParser from 'cookie-parser';
 import cors from 'cors';
@@ -14,6 +13,7 @@ import OrderRoute from './dRoute/order.route.js'
 import AdminRoute from './dRoute/admin.route.js'
 import uploadRoute from './dRoute/upload.route.js'
 import conectToDB from './config/db.js';
+import { StartBot } from './config/bot.js';
 
 const app = express();
 dotenv.config();
@@ -21,6 +21,7 @@ app.use(cookieParser());
 
 // Connect to the database
 conectToDB()
+StartBot()
 
 // Get the absolute path to our backend
 const __filename = fileURLToPath(import.meta.url);
@@ -37,11 +38,6 @@ app.use('/api/feedback', feedBackRoute);
 app.use('/api/order', OrderRoute);
 app.use('/api/admin', AdminRoute);
 app.use('/api/upload', uploadRoute)
-
-
-
-
-
 
 
 

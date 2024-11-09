@@ -25,6 +25,7 @@ const OrderSchema = mongoose.Schema({
     },
     PaymentChooice: {
         type: String,
+        enum:['CBE','Telebirr','CBEbirr','abissynia','awash'],
         required: true,
     }
 
