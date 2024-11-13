@@ -4,13 +4,16 @@ import axios from 'axios';
 import { v2 as cloudinary } from 'cloudinary';
 
 const bot = new Telegraf('7786553835:AAHn3PPyLoyBUOTckFvykwHSDAJn7lf04k0');
+const CLOUDINARY_API_SECRET = '4h9yIvx3Z2K87R-JYX4cSmUAASo'
+const CLOUDINARY_API_KEY = '248274752835674'
+const CLOUDINARY_CLOUD_NAME = 'dav0xprbp'
 
 
 // Configure Cloudinary with your credentials
 cloudinary.config({
-    cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
-    api_key: process.env.CLOUDINARY_API_KEY,
-    api_secret: process.env.CLOUDINARY_API_SECRET,
+    cloud_name: CLOUDINARY_CLOUD_NAME,
+    api_key: CLOUDINARY_API_KEY,
+    api_secret: CLOUDINARY_API_SECRET,
 });
 
 

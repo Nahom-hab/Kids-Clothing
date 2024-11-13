@@ -82,7 +82,7 @@ export default function ViewCloths() {
                         <div className='font-dynapuff text-2xl lg:text-5xl'>
                             {product.name}
                         </div>
-                        <div className='text-gray-500 w-[70%] mt-8'>{product.description}</div>
+                        <div className='text-gray-500 w-full  md:w-[70%] mt-8'>{product.description}</div>
                         <div className='flex mt-4 items-baseline gap-2'>
                             <div className='font-dynapuff text-2xl'><span className='text-green-500 '>ETB</span> {product.regularPrice}</div>
                             <div className='line-through text-gray-500 text-[12px]'>ETB {parseInt(product.regularPrice) + parseInt(product.regularPrice * parseInt(product.discountPercent) / 100)}</div>

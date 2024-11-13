@@ -10,8 +10,6 @@ import productRouter from './dRoute/product.route.js'
 import authRouter from './dRoute/auth.route.js'
 import feedBackRoute from './dRoute/feedback.route.js'
 import OrderRoute from './dRoute/order.route.js'
-import AdminRoute from './dRoute/admin.route.js'
-import uploadRoute from './dRoute/upload.route.js'
 import conectToDB from './config/db.js';
 import { StartBot } from './config/bot.js';
 
@@ -36,8 +34,6 @@ app.use('/api/product', productRouter);
 app.use('/api/auth', authRouter);
 app.use('/api/feedback', feedBackRoute);
 app.use('/api/order', OrderRoute);
-app.use('/api/admin', AdminRoute);
-app.use('/api/upload', uploadRoute)
 
 
 
